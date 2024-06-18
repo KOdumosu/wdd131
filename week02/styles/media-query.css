@@ -9,12 +9,11 @@ footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    backgraound-color: #e6f2ff
+    
 }
 
 main {
     display: grid;
-    grid-template-column: 1fr;
     grid-gap: 1rem;
 }
 
