@@ -1,0 +1,10 @@
+@media screen and (min-width: 600px) {
+
+    header,
+    footer {
+        font-size: 35px;
+        background-color: rgb(202, 88, 88);
+        color: rgb(246, 247, 244);
+        text-align: center;
+    }
+}

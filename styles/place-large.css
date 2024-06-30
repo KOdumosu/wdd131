@@ -1,0 +1,47 @@
+@media screen and (min-width: 600px) {
+    header, footer {
+        font-size: 35px;
+        background-color: rgb(202, 88, 88);
+        color: rgb(246, 247, 244);
+        text-align: center;
+    }
+}
+
+
+footer {
+    font-size: medium;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.parentContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: rgb(43, 41, 41);
+    font-size: medium;
+    background-color: rgb(213, 250, 146);
+}
+
+
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: rgb(43, 42, 42);
+    font: 1em sans-serif;
+    font-size: medium;
+    background-color: rgb(212, 238, 140);
+}
+
+
