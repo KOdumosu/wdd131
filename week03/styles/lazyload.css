@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: #15d36a;
+    padding: 20px;
+    text-align: center;
+    border: grey;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
