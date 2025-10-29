@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #1c3d5a;
+  --secondary-color: #f5f5f5;
+  --accent-color: #f3c623;
+  --dark-color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+/* HEADER */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header .highlight {
+  color: var(--accent-color);
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  gap: 16rem;
+  padding: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+}
+
+/* MAIN */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-content img {
+  width: 130px;
+  border-radius: 10px;
+}
+
+.flag-section {
+  text-align: center;
+}
+
+.flag-section img {
+  width: 100px;
+  border: 1px solid #ccc;
+}
+
+/* LINKS LIST */
+.resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resources li {
+  margin-bottom: 0.5rem;
+}
+
+.resources a {
+  text-decoration: none;
+  color: #004aad;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+
+/* Style for section headings */
+.card h2 {
+  background-color: #1c3d5a; /* same navy blue as header */
+  color: white;
+  padding: 0.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: -1rem -1rem 1rem -1rem; /* pull the blue banner to the card edges */
+  text-align: center;
+}
+
+.section-divider {
+  border-top: 1.5px dashed #446c9b;
+  width: 70%;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  gap: 3rem;
+}
+
+/* === Ogun State section layout === */
+
+.location-title {
+  text-align: center;
+  color: #1c3d5a; /* same blue as headings */
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.section-divider {
+  border: 0;
+  border-top: 2px solid #1c3d5a;
+  width: 60%;
+  margin: 0.5rem auto 1.5rem;
+}
+
+/* Two-column layout: flag on left, text on right */
+.location-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* makes it responsive on smaller screens */
+}
+
+/* Flag box */
+.flag-box {
+  text-align: center;
+}
+
+.flag-box img {
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.flag-box p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+/* Description text */
+.state-description {
+  max-width: 400px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+}
