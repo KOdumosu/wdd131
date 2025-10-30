@@ -31,7 +31,7 @@ nav {
   background-color: #222;
   display: flex;
   justify-content: center;
-  gap: 16rem;
+  gap: 15rem;
   padding: 0.75rem;
   letter-spacing: 1.5px;
 }
@@ -109,7 +109,7 @@ main {
 
 /* Style for section headings */
 .card h2 {
-  background-color: #1c3d5a; /* same navy blue as header */
+  background-color: #1c3d5a; 
   color: white;
   padding: 0.5rem;
   border-top-left-radius: 10px;
@@ -121,20 +121,6 @@ main {
 .section-divider {
   border-top: 1.5px dashed #446c9b;
   width: 70%;
-}
-
-/* FOOTER */
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin-top: 2rem;
-}
-
-footer p {
-  margin: 0.25rem 0;
-  gap: 3rem;
 }
 
 /* === Ogun State section layout === */
@@ -185,4 +171,23 @@ footer p {
   line-height: 1.6;
   color: #333;
   font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  gap: 3rem;
+}
+
+footer .last-modified{
+  color: #f3c623;
+  font-size: 0.9rem;
 }
