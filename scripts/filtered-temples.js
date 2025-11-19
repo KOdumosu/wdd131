@@ -70,6 +70,20 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 41010,
     imageUrl: "https://www.churchofjesuschrist.org/imgs/17e2c70d687fffedfe115197e57fa8f5d1d369bb/full/500%2C/0/default"
+  },
+   {
+    templeName: "Abidjan, Ivory Coast",
+    location: "Abidjan, Cote d'Ivoire",
+    dedicated: "2025, May, 25", 
+    area: 17362,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-58993-main.jpg"
+  },
+   {
+    templeName: "Perth, Australia",
+    location: "Yokine, Western Australia  6060, Australia",
+    dedicated: "2001, May, 20",
+    area: 10700,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/perth-australia-temple/perth-australia-temple-34994-main.jpg"
   }
 ];
 
