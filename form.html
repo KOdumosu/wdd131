@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main class="form-wrapper">
+    <form action="review.html" method="get">
+      
+      <!-- Product list dynamically populated by form.js -->
+      <label style="color: white;" for="productName">Product Name <span class="required">*</span></label>
+      <select id="productName" name="productName" required>
+        <option value="">Loading products...</option>
+      </select>
+
+     <p> <label style="color: white;">Overall Rating <span class="required">*</span></label></p>
+      <legend class="rating">
+    
+    <div class="rating-container">
+  <label class="rating-item">
+    <span style="color: gold;" class="star">★</span>
+    <input type="radio" name="rating" value="1">
+  </label>
+
+  <label class="rating-item">
+    <span style="color: gold;" class="star">★★</span>
+    <input type="radio" name="rating" value="2">
+  </label>
+
+  <label class="rating-item">
+    <span style="color: gold;" class="star">★★★</span>
+    <input type="radio" name="rating" value="3">
+  </label>
+
+  <label class="rating-item">
+    <span style="color: gold;" class="star">★★★★</span>
+    <input type="radio" name="rating" value="4">
+  </label>
+
+  <label class="rating-item">
+    <span style="color: gold;" class="star">★★★★★</span>
+    <input type="radio" name="rating" value="5">
+  </label>
+</div>
+      <p><label style="color: white;">Date of Installation</label>
+      <input type="date" id="installation" name="installation"></p>
+
+       
+
+       <label style="color: white;">Which features did you find useful?</label><br>
+    <label style="font-size: smaller; font-style: italic;">(Check All that apply)</label><br>
+    
+        <input type="checkbox" name="news"> Durability<br>
+        <input type="checkbox" name="offers"> Ease of Use<br>
+        <input type="checkbox" name="offers"> Performance<br>
+        <input type="checkbox" name="offers"> Design<br>
+    
+
+<p></p>
+
+      <label style="color: white;" for="writtenReview">Written Review<label style="font-style: italic;">(Optional)</label></label>
+      <textarea id="writtenReview" name="writtenReview" rows="4" placeholder="Write your thoughts..."></textarea>
+
+      <p></p>
+      <label style="color: white;" for="reviewerName">Your Name <span style="font-size: 0.9em; color:#555;">(Optional)</span></label>
+<input type="text" id="reviewerName" name="reviewerName" placeholder="Enter your name ...">
+
+     <fieldset>
+    <legend style="color: white;">May we contact you?</legend>
+    <label><input type="radio" name="radio" value="yes" /> Yes</label>
+    <label><input type="radio" name="radio" value="no" /> No</label>
+  </fieldset>
+      <input type="submit" value="Submit Review" class="btn">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Product Review Form</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
