@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Efluxe Innovations — Creative & Technology Solutions</title>
+<meta name="description" content="Efluxe Innovations — Creative, technology and service solutions: graphics, branding, photography, software and community projects." />
+ <meta name="author" content="Kehinde Odumosu" />
+  <link rel="stylesheet" href="styles/efluxe.css" />
+  <script src="scripts/efluxe.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="site-header">
+<div class="topbar">
+<div class="brand">
+<div class="logo">EI</div>
+<div>
+<h1>Efluxe Innovations</h1>
+<p>A Creative and Technology Solutions Brand</p>
+</div>
+</div>
+<nav class="main-nav">
+<div class="nav-inner">
+<a href="exfluxe.html">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#Register">Register</a>
+</div>
+</nav>
+
+
+<button class="hamburger" id="hamb">Menu ☰</button>
+</div>
+
+
+<div class="mobile-nav" id="mnav" aria-hidden="true">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#Register">Register</a>
+</div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-visual">
+<div style="max-width:820px">
+<h2>Digitalization: Home of ideas</h2>
+<p class="lead">Creativity — Technology — Purpose</p>
+<img src="images/hero.jpg" alt="Alternative text" width="800" height="500">
+<p><button class="cta" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore Services</button></p>
+
+</div>
+</div>
+</section>
+<!-- SERVICES -->
+<section id="services" class="services-section">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services-grid">
+
+        <a href="services/graphics.html" class="service-card">Graphics</a>
+        <a href="services/software-tech.html" class="service-card">Software & Tech Solutions</a>
+        <a href="services/photography.html" class="service-card">Photography</a>
+        <a href="services/events.html" class="service-card">Events</a>
+        <a href="services/digital-solutions.html" class="service-card">Digital Solutions</a>
+        <a href="services/community-projects.html" class="service-card">Community Projects</a>
+
+    </div>
+</section>
+<!-- PORTFOLIO + About -->
+<section class="content-row">
+<div class="portfolio" id="portfolio">
+<h3 style="font-family:Montserrat">Portfolio</h3>
+<div class="portfolio-grid" id="portfolioGrid">
+<!-- JS will populate images -->
+</div>
+<p style="text-align:right; margin-top:8px"><button onclick="addMore()" style="padding:6px 10px; border-radius:6px; border:1px solid #ccc; background:#fff">+ More</button></p>
+</div>
+
+<aside class="about" id="about">
+<h3 style="font-family:Montserrat">About Us</h3>
+<p>We are Efluxe Innovations — a creative and technology solutions brand. We blend design, engineering, and empathy to build digital products and visual stories that help small businesses and communities grow. Our mission is to help clients discover purpose-driven digital strategy and beautiful execution.</p>
+</aside>
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h3 style="font-family:Montserrat; text-align:center">Contact Us</h3>
+<div class="contact-grid">
+<div>
+<div class="form-control">
+<label for="name">Name</label>
+<input id="name" type="text" placeholder="Your name" />
+</div>
+<div class="form-control" style="margin-top:10px">
+<label for="email">Email</label>
+<input id="email" type="email" placeholder="you@example.com" />
+</div>
+<div class="form-control" style="margin-top:10px">
+<label for="phone">Phone</label>
+<input id="phone" type="tel" placeholder="+234 123 4567" />
+</div>
+</div>
+
+
+<div>
+<label for="message">Message</label>
+<textarea id="message" rows="6" placeholder="Tell us about your project..."></textarea>
+</div>
+
+
+<div style="display:flex; align-items:center; justify-content:center">
+<button class="send-btn" onclick="alert('Thanks — message simulated. Implement backend to actually send.')">Send</button>
+</div>
+</div>
+</section>
+
+
+<footer class="site-footer">
+<div class="inner">
+<p>© <span id="yr"></span> Efluxe Innovations | <a href="#" style="color:var(--gold); text-decoration:none">Privacy Policy</a> | <a href="#" style="color:var(--gold); text-decoration:none">Terms</a></p>
+</div>
+</footer>
+</body>
+</html>
