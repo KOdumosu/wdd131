@@ -7,14 +7,14 @@ mnav.setAttribute('aria-hidden', String(!mnav.classList.contains('open')));
 });
 
 
-// portfolio demo images (placeholders)
+// portfolio demo images (your actual images)
 const portfolio = [
-{title:'Branding sample', img:'https://picsum.photos/seed/p1/600/400'},
-{title:'Poster design', img:'https://picsum.photos/seed/p2/600/400'},
-{title:'Web app UI', img:'https://picsum.photos/seed/p3/600/400'},
-{title:'Product photo', img:'https://picsum.photos/seed/p4/600/400'},
-{title:'Campaign', img:'https://picsum.photos/seed/p5/600/400'},
-{title:'Community project', img:'https://picsum.photos/seed/p6/600/400'}
+  { title: 'Temples page', img: 'images/lagos-temple.jpeg' },
+  { title: 'Photography', img: 'images/photography.jpg' },
+  { title: 'Branding', img: 'images/poster1.jpg' },
+  { title: 'Graphics', img: 'images/flyer.jpg' },
+  { title: 'Digital Solutions', img: 'images/digital.jpeg' },
+  { title: 'Community project', img: 'images/community.jpg' }
 ];
 
 

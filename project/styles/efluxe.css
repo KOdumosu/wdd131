@@ -212,6 +212,11 @@ img  {
     gap:18px; 
     padding:0 18px
 }
+.content-row h3{
+    font-family:Montserrat; 
+    margin-top:0;
+    text-align:center;
+}
 .portfolio{
     background:var(--muted); 
     border-radius:var(--radius); 
