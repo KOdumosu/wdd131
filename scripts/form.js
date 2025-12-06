@@ -1,3 +1,6 @@
+// ---------------------------
+// Populate PRODUCT Dropdown
+// ---------------------------
 const products = [
   { id: 1, name: "Digital Photobook" },
   { id: 2, name: "Crystal frameless board" },
@@ -8,7 +11,6 @@ const products = [
 
 const productSelect = document.querySelector("#productName");
 
-// Populate dropdown
 productSelect.innerHTML = `<option value="">Choose a product</option>`;
 
 products.forEach(product => {
@@ -18,18 +20,48 @@ products.forEach(product => {
   productSelect.appendChild(opt);
 });
 
+// ---------------------------
+// LAST MODIFIED FOOTER INFO
+// ---------------------------
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Display formatted last modified date and time
 const modifiedDate = new Date(document.lastModified);
-const options = { 
-  year: "numeric", 
-  month: "2-digit", 
-  day: "2-digit", 
-  hour: "2-digit", 
-  minute: "2-digit", 
-  second: "2-digit" 
-};
-
 document.getElementById("lastModified").textContent =
-  "Last Modification: " + modifiedDate.toLocaleString("en-GB", options);
+  "Last Modification: " + modifiedDate.toLocaleString("en-GB");
+
+
+// ---------------------------
+// FORM VALIDATION
+// ---------------------------
+document.querySelector("form").addEventListener("submit", function (event) {
+  let errors = [];
+
+  // Validate Product
+  if (productSelect.value === "") {
+    errors.push("Please select a product.");
+  }
+
+  // Validate Rating
+  let ratingSelected = document.querySelector('input[name="rating"]:checked');
+  if (!ratingSelected) {
+    errors.push("Please select a rating.");
+  }
+
+  // Validate Date
+  let installationDate = document.querySelector("#installation");
+  if (installationDate.value === "") {
+    errors.push("Please select the installation date.");
+  }
+
+  // Validate Contact Permission
+  let contactChoice = document.querySelector('input[name="radio"]:checked');
+  if (!contactChoice) {
+    errors.push("Please tell us if we may contact you.");
+  }
+
+  // If errors exist, prevent form submission
+  if (errors.length > 0) {
+    event.preventDefault();
+    alert(errors.join("\n"));
+  }
+});
